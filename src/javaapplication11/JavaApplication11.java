@@ -33,7 +33,7 @@ public class JavaApplication11 {
    
     public boolean isSeason(String userSeason) 
     {
-        if(userSeason.equals(season))
+        if(userSeason.equals(season.name()))
         {
             return true; 
         }
@@ -74,7 +74,7 @@ public class JavaApplication11 {
 
         JavaApplication11 test1= new JavaApplication11(Seasons.valueOf(myStr));
         
-        test1.isSeason(myStr);
+      System.out.println(test1.isSeason(myStr));
 
         test1.seasonDescription(); //test1.isSeason();
        
